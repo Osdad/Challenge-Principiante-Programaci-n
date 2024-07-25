@@ -20,11 +20,12 @@
     <main>
       <section class="contenido_pagina">
         <div class="funcion__encriptar">
-          <input
-            type="text"
+          <textarea
+            name=""
             id="texto__procesar"
             placeholder="Ingrese Un Texto Aqui"
-          />
+          ></textarea>
+
           <div class="minusculas">
             <p>
               <span class="material-symbols-outlined"> info </span>
@@ -32,8 +33,12 @@
             </p>
           </div>
           <div class="botones__encriptar">
-            <button onclick="encriptarTexto();">Encriptar</button>
-            <button onclick="desencriptarTexto();">Desencriptar</button>
+            <button onclick="encriptarTexto();" class="btn__encript">
+              Encriptar
+            </button>
+            <button onclick="desencriptarTexto();" class="btn__desencript">
+              Desencriptar
+            </button>
           </div>
         </div>
         <div class="desencriptar_mostar">

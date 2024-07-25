@@ -10,12 +10,13 @@
   --tipografia-titulos: "Petrona", serif;
   --tipografia-parrafos: "Anton SC", sans-serif;
   --color-header-footer: #7ee6e0;
+  --color-body: #d1e2e4;
 }
 
 body {
   box-sizing: border-box;
   text-align: center;
-  background: #d1e2e4;
+  background: var(--color-body);
 }
 .header {
   display: flex;
@@ -57,17 +58,18 @@ section p {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  border: 2px solid #ccff44;
   padding: 25px;
   align-items: center;
 }
-.funcion__encriptar input {
+.funcion__encriptar textarea {
   width: 100%;
   height: 300px;
   border: 0;
-  background-color: #fcf9f9;
+  background-color: var(--color-body);
   border-radius: 5px;
-  text-align: center;
+  text-align: left;
+  resize: none;
+  outline: none;
 }
 
 .minusculas {
@@ -92,9 +94,17 @@ section p {
   padding: 10px;
 }
 
+.btn__encript {
+  background: #77a8e4;
+}
+
 .desencriptar_mostar {
   width: 35%;
-  border: 2px solid #ccff44;
+  border-radius: 15px;
+  background: #e5e7eb;
+}
+.btn__desencript {
+  background: #d8dfe8;
 }
 
 .subtitle__des {
@@ -133,6 +143,7 @@ section p {
 #mostrarTextoProcesado {
   height: 325px;
   width: 80%;
+  border: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -140,6 +151,8 @@ section p {
   resize: none;
   box-sizing: border-box;
   overflow: hidden;
+  background: #e5e7eb;
+  outline: none;
 }
 footer {
   width: 100%;
@@ -173,7 +186,6 @@ footer {
 
   .desencriptar_mostar {
     width: 57%;
-    border: 2px solid #ccff44;
   }
 
   .imagen__inicio {
