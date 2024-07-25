@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <title>Encriptador de Texto</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo_area">
+        <img src="./assets/gotipo-pajaros-colores.png" alt="" src="" />
+      </div>
+    </header>
+    <h1 class="titulo1__principal">Encriptador de Texto</h1>
+    <main>
+      <section class="contenido_pagina">
+        <div class="funcion__encriptar">
+          <input
+            type="text"
+            id="texto__procesar"
+            placeholder="Ingrese Un Texto Aqui"
+          />
+          <div class="minusculas">
+            <p>
+              <span class="material-symbols-outlined"> info </span>
+              <span> Solo letras minúsculas y sin acentos</span>
+            </p>
+          </div>
+          <div class="botones__encriptar">
+            <button onclick="encriptarTexto();">Encriptar</button>
+            <button onclick="desencriptarTexto();">Desencriptar</button>
+          </div>
+        </div>
+        <div class="desencriptar_mostar">
+          <div class="imagen__inicio">
+            <img src="./assets/cifrado_informacion.jpg" alt="" />
+            <p class="subtitle__des"><b>Ningun mensaje fue encontrado</b></p>
+            <p>Ingresa el texto que deseas Encriptar o Desencriptar.</p>
+          </div>
+
+          <div class="funcion__copiar">
+            <textarea name="" id="mostrarTextoProcesado"></textarea>
+            <button onclick="copiarTexto();">Copiar</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="contenido__footer">
+        <div class="img__header">
+          <img
+            src="./assets/gotipo-pajaros-colores.png"
+            alt=""
+            width="100"
+            height="100"
+          />
+        </div>
+        <div class="marcar__registrada">
+          <p>Marca Registrada</p>
+          <span class="material-symbols-outlined"> copyright </span>
+        </div>
+        <div class="sobre__nosotros"><p>Sobre Nosotros</p></div>
+      </div>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton+SC&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --tipografia-titulos: "Petrona", serif;
+  --tipografia-parrafos: "Anton SC", sans-serif;
+  --color-header-footer: #7ee6e0;
+}
+
+body {
+  box-sizing: border-box;
+  text-align: center;
+  background: #d1e2e4;
+}
+.header {
+  display: flex;
+  background: var(--color-header-footer);
+  justify-content: start;
+  padding: auto;
+}
+
+.logo_area {
+  width: 100px;
+  height: 100px;
+  padding: 6px;
+}
+
+.logo_area img {
+  width: 100px;
+  height: 100px;
+}
+main {
+  width: 100%;
+}
+
+.contenido_pagina {
+  display: flex;
+  justify-content: center;
+}
+
+section p {
+  font-family: var(--tipografia-titulos);
+}
+
+.titulo1__principal {
+  font-family: var(--tipografia-parrafos);
+  font-size: 50px;
+}
+
+.funcion__encriptar {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 2px solid #ccff44;
+  padding: 25px;
+  align-items: center;
+}
+.funcion__encriptar input {
+  width: 100%;
+  height: 300px;
+  border: 0;
+  background-color: #fcf9f9;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.minusculas {
+  display: flex;
+}
+.minusculas p {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.botones__encriptar {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.botones__encriptar button {
+  border-radius: 15px;
+  width: 50%;
+  margin: 6px;
+  padding: 10px;
+}
+
+.desencriptar_mostar {
+  width: 35%;
+  border: 2px solid #ccff44;
+}
+
+.subtitle__des {
+  font-size: 20px;
+}
+
+.imagen__inicio {
+  padding: 40px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 90%;
+  height: 80%;
+}
+
+.imagen__inicio img {
+  width: 80%;
+  margin-bottom: 7%;
+}
+
+.funcion__copiar {
+  display: none;
+  padding: 25px 5px 10px 5px;
+  flex-direction: column;
+  gap: 45px;
+  align-items: center;
+}
+
+.funcion__copiar button {
+  border-radius: 15px;
+  width: 52%;
+  height: 39px;
+}
+
+#mostrarTextoProcesado {
+  height: 325px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  resize: none;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+footer {
+  width: 100%;
+  margin-top: 15px;
+  background: var(--color-header-footer);
+}
+
+.contenido__footer {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+}
+
+.marcar__registrada {
+  font-family: var(--tipografia-parrafos);
+  padding: 25px;
+}
+.sobre__nosotros {
+  font-family: var(--tipografia-parrafos);
+  padding: 25px;
+}
+
+@media (max-width: 768px) {
+  .contenido_pagina {
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .desencriptar_mostar {
+    width: 57%;
+    border: 2px solid #ccff44;
+  }
+
+  .imagen__inicio {
+    gap: 10px;
+  }
+  .imagen__inicio img {
+    display: none;
+  }
+
+  .funcion__copiar {
+    gap: 10px;
+  }
+  .funcion__copiar button {
+    width: 80%;
+  }
+
+  .botones__encriptar button {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (max-width: 375px) {
+  .botones__encriptar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .desencriptar_mostar {
+    width: 66%;
+  }
+
+  .botones__encriptar button {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .contenido__footer {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
